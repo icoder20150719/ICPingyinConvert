@@ -12,20 +12,24 @@
 	<dict>
 		<key>2FF6ADE4187ED97709EC6269322AC53505577DA4</key>
 		<string>https://github.com/zhufengyi01/CustomTabbarController.git</string>
+		<key>723E61B6AD4A3243A2B0FA230F19377F64CA416C</key>
+		<string>https://github.com/icoder20150719/ICPingyinConvert.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ICPingyinConvert/ICPingyinConvert.xcodeproj/project.xcworkspace</string>
+	<string>ICPingyinConvert.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2FF6ADE4187ED97709EC6269322AC53505577DA4</key>
 		<string>../../..</string>
+		<key>723E61B6AD4A3243A2B0FA230F19377F64CA416C</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/zhufengyi01/CustomTabbarController.git</string>
+	<string>https://github.com/icoder20150719/ICPingyinConvert.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2FF6ADE4187ED97709EC6269322AC53505577DA4</string>
+	<string>723E61B6AD4A3243A2B0FA230F19377F64CA416C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2FF6ADE4187ED97709EC6269322AC53505577DA4</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Study</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>723E61B6AD4A3243A2B0FA230F19377F64CA416C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ICPingyinConvert1</string>
 		</dict>
 	</array>
 </dict>
