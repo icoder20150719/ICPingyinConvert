@@ -1,5 +1,5 @@
 # ICPingyinConvert
-一个实现中文首拼音首字母转化成英文，然后给tabbleview添加分组和索引的方法。
+一键实现通讯录城市分组排训的
 ### 效果图
 ![Image](https://github.com/icoder20150719/ICPingyinConvert/blob/master/pingyin.gif)
 
