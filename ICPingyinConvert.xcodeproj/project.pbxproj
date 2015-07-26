@@ -14,10 +14,10 @@
 		38E4C6411B61348C00F620D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E4C6401B61348C00F620D3 /* Images.xcassets */; };
 		38E4C6441B61348C00F620D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E4C6421B61348C00F620D3 /* LaunchScreen.xib */; };
 		38E4C6501B61348C00F620D3 /* ICPingyinConvertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4C64F1B61348C00F620D3 /* ICPingyinConvertTests.m */; };
-		38E4C65E1B61354500F620D3 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4C65B1B61354500F620D3 /* ChineseString.m */; };
-		38E4C65F1B61354500F620D3 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 38E4C65C1B61354500F620D3 /* pinyin.c */; };
 		38E4C6611B61357B00F620D3 /* name in Resources */ = {isa = PBXBuildFile; fileRef = 38E4C6601B61357B00F620D3 /* name */; };
-		38E4DF721B64FBF300053132 /* LEOPinyinGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4DF711B64FBF300053132 /* LEOPinyinGroup.m */; };
+		38E4DF721B64FBF300053132 /* ICPinyinGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4DF711B64FBF300053132 /* ICPinyinGroup.m */; };
+		38E4DF741B65007E00053132 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E4DF731B65007E00053132 /* UIKit.framework */; };
+		38E4DF791B650B7D00053132 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4DF781B650B7D00053132 /* MyModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +44,11 @@
 		38E4C6491B61348C00F620D3 /* ICPingyinConvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICPingyinConvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E4C64E1B61348C00F620D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E4C64F1B61348C00F620D3 /* ICPingyinConvertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICPingyinConvertTests.m; sourceTree = "<group>"; };
-		38E4C65A1B61354500F620D3 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
-		38E4C65B1B61354500F620D3 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
-		38E4C65C1B61354500F620D3 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
-		38E4C65D1B61354500F620D3 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		38E4C6601B61357B00F620D3 /* name */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name; sourceTree = "<group>"; };
-		38E4DF701B64FBF300053132 /* LEOPinyinGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEOPinyinGroup.h; sourceTree = "<group>"; };
-		38E4DF711B64FBF300053132 /* LEOPinyinGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEOPinyinGroup.m; sourceTree = "<group>"; };
+		38E4DF701B64FBF300053132 /* ICPinyinGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPinyinGroup.h; sourceTree = "<group>"; };
+		38E4DF711B64FBF300053132 /* ICPinyinGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPinyinGroup.m; sourceTree = "<group>"; };
+		38E4DF731B65007E00053132 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		38E4DF781B650B7D00053132 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E4DF741B65007E00053132 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +73,9 @@
 		38E4C6271B61348C00F620D3 = {
 			isa = PBXGroup;
 			children = (
+				38E4DF731B65007E00053132 /* UIKit.framework */,
 				38E4DF6F1B64FBF300053132 /* ICPingyinConvert2 */,
 				38E4C6601B61357B00F620D3 /* name */,
-				38E4C6591B61354500F620D3 /* chineseTopingying */,
 				38E4C6321B61348C00F620D3 /* ICPingyinConvert */,
 				38E4C64C1B61348C00F620D3 /* ICPingyinConvertTests */,
 				38E4C6311B61348C00F620D3 /* Products */,
@@ -95,6 +94,7 @@
 		38E4C6321B61348C00F620D3 /* ICPingyinConvert */ = {
 			isa = PBXGroup;
 			children = (
+				38E4DF781B650B7D00053132 /* MyModel.m */,
 				38E4C6371B61348C00F620D3 /* AppDelegate.h */,
 				38E4C6381B61348C00F620D3 /* AppDelegate.m */,
 				38E4C63A1B61348C00F620D3 /* ViewController.h */,
@@ -133,22 +133,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38E4C6591B61354500F620D3 /* chineseTopingying */ = {
-			isa = PBXGroup;
-			children = (
-				38E4C65A1B61354500F620D3 /* ChineseString.h */,
-				38E4C65B1B61354500F620D3 /* ChineseString.m */,
-				38E4C65C1B61354500F620D3 /* pinyin.c */,
-				38E4C65D1B61354500F620D3 /* pinyin.h */,
-			);
-			path = chineseTopingying;
-			sourceTree = "<group>";
-		};
 		38E4DF6F1B64FBF300053132 /* ICPingyinConvert2 */ = {
 			isa = PBXGroup;
 			children = (
-				38E4DF701B64FBF300053132 /* LEOPinyinGroup.h */,
-				38E4DF711B64FBF300053132 /* LEOPinyinGroup.m */,
+				38E4DF701B64FBF300053132 /* ICPinyinGroup.h */,
+				38E4DF711B64FBF300053132 /* ICPinyinGroup.m */,
 			);
 			path = ICPingyinConvert2;
 			sourceTree = "<group>";
@@ -254,9 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E4C65F1B61354500F620D3 /* pinyin.c in Sources */,
-				38E4DF721B64FBF300053132 /* LEOPinyinGroup.m in Sources */,
-				38E4C65E1B61354500F620D3 /* ChineseString.m in Sources */,
+				38E4DF721B64FBF300053132 /* ICPinyinGroup.m in Sources */,
+				38E4DF791B650B7D00053132 /* MyModel.m in Sources */,
 				38E4C63C1B61348C00F620D3 /* ViewController.m in Sources */,
 				38E4C6391B61348C00F620D3 /* AppDelegate.m in Sources */,
 				38E4C6361B61348C00F620D3 /* main.m in Sources */,

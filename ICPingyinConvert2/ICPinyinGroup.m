@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 lion. All rights reserved.
 //
 
-#import "LEOPinyinGroup.h"
+#import "ICPinyinGroup.h"
 #import <objc/runtime.h>
 
 #define HANZI_START 19968
@@ -18,7 +18,7 @@ NSString *const LEOPinyinGroupCharKey = @"LEOPinyinGroupCharKey";
 
 static char LEOPinyinGroupSectionNumberKey;
 
-@implementation LEOPinyinGroup
+@implementation ICPinyinGroup
 
 +(NSDictionary *)group:(NSArray *)datas key:(NSString *)key{
     
@@ -43,8 +43,8 @@ static char LEOPinyinGroupSectionNumberKey;
     for (id model in datas) {
         NSInteger sectionNumber = [objc_getAssociatedObject(model, &LEOPinyinGroupSectionNumberKey) integerValue];
         [newSectionArray[sectionNumber] addObject:model];
-        unichar firstChar = [LEOPinyinGroup firstCharactor:[[model valueForKey:key] description]];
-        NSString *firstCharString = [NSString stringWithFormat:@"%C",firstChar];
+        unichar firstChar = [ICPinyinGroup firstCharactor:[[model valueForKey:key] description]];
+            NSString *firstCharString = [[NSString stringWithFormat:@"%C",firstChar]uppercaseString];
         if (![charArray containsObject:firstCharString]) {
             [charArray addObject:firstCharString];
         }
