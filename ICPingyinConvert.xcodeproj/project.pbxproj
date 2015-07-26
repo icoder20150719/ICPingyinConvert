@@ -17,6 +17,7 @@
 		38E4C65E1B61354500F620D3 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4C65B1B61354500F620D3 /* ChineseString.m */; };
 		38E4C65F1B61354500F620D3 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 38E4C65C1B61354500F620D3 /* pinyin.c */; };
 		38E4C6611B61357B00F620D3 /* name in Resources */ = {isa = PBXBuildFile; fileRef = 38E4C6601B61357B00F620D3 /* name */; };
+		38E4DF721B64FBF300053132 /* LEOPinyinGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4DF711B64FBF300053132 /* LEOPinyinGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		38E4C65C1B61354500F620D3 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
 		38E4C65D1B61354500F620D3 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		38E4C6601B61357B00F620D3 /* name */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name; sourceTree = "<group>"; };
+		38E4DF701B64FBF300053132 /* LEOPinyinGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEOPinyinGroup.h; sourceTree = "<group>"; };
+		38E4DF711B64FBF300053132 /* LEOPinyinGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEOPinyinGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		38E4C6271B61348C00F620D3 = {
 			isa = PBXGroup;
 			children = (
+				38E4DF6F1B64FBF300053132 /* ICPingyinConvert2 */,
 				38E4C6601B61357B00F620D3 /* name */,
 				38E4C6591B61354500F620D3 /* chineseTopingying */,
 				38E4C6321B61348C00F620D3 /* ICPingyinConvert */,
@@ -138,6 +142,15 @@
 				38E4C65D1B61354500F620D3 /* pinyin.h */,
 			);
 			path = chineseTopingying;
+			sourceTree = "<group>";
+		};
+		38E4DF6F1B64FBF300053132 /* ICPingyinConvert2 */ = {
+			isa = PBXGroup;
+			children = (
+				38E4DF701B64FBF300053132 /* LEOPinyinGroup.h */,
+				38E4DF711B64FBF300053132 /* LEOPinyinGroup.m */,
+			);
+			path = ICPingyinConvert2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38E4C65F1B61354500F620D3 /* pinyin.c in Sources */,
+				38E4DF721B64FBF300053132 /* LEOPinyinGroup.m in Sources */,
 				38E4C65E1B61354500F620D3 /* ChineseString.m in Sources */,
 				38E4C63C1B61348C00F620D3 /* ViewController.m in Sources */,
 				38E4C6391B61348C00F620D3 /* AppDelegate.m in Sources */,
@@ -442,6 +456,7 @@
 				38E4C6551B61348C00F620D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38E4C6561B61348C00F620D3 /* Build configuration list for PBXNativeTarget "ICPingyinConvertTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +465,7 @@
 				38E4C6581B61348C00F620D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
