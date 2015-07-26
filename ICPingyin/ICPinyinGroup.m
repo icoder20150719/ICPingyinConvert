@@ -31,7 +31,6 @@ static char LEOPinyinGroupSectionNumberKey;
         NSMutableArray *array = [[NSMutableArray alloc] init];
         [newSectionArray addObject:array];
     }
-    
     for (id model in datas) {
         //获取name属性的值所在的位置，比如"林丹"，首字母是L，在A~Z中排第11（第一位是0），sectionNumber就为11
         NSInteger sectionNumber = [collation sectionForObject:model collationStringSelector:NSSelectorFromString(key)];
