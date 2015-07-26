@@ -15,9 +15,9 @@
 		38E4C6441B61348C00F620D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E4C6421B61348C00F620D3 /* LaunchScreen.xib */; };
 		38E4C6501B61348C00F620D3 /* ICPingyinConvertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4C64F1B61348C00F620D3 /* ICPingyinConvertTests.m */; };
 		38E4C6611B61357B00F620D3 /* name in Resources */ = {isa = PBXBuildFile; fileRef = 38E4C6601B61357B00F620D3 /* name */; };
-		38E4DF721B64FBF300053132 /* ICPinyinGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4DF711B64FBF300053132 /* ICPinyinGroup.m */; };
 		38E4DF741B65007E00053132 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E4DF731B65007E00053132 /* UIKit.framework */; };
 		38E4DF791B650B7D00053132 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4DF781B650B7D00053132 /* MyModel.m */; };
+		38E4DF7D1B650E1D00053132 /* ICPinyinGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E4DF7C1B650E1D00053132 /* ICPinyinGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +45,11 @@
 		38E4C64E1B61348C00F620D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E4C64F1B61348C00F620D3 /* ICPingyinConvertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICPingyinConvertTests.m; sourceTree = "<group>"; };
 		38E4C6601B61357B00F620D3 /* name */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name; sourceTree = "<group>"; };
-		38E4DF701B64FBF300053132 /* ICPinyinGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPinyinGroup.h; sourceTree = "<group>"; };
-		38E4DF711B64FBF300053132 /* ICPinyinGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPinyinGroup.m; sourceTree = "<group>"; };
 		38E4DF731B65007E00053132 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		38E4DF781B650B7D00053132 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
+		38E4DF7B1B650E1D00053132 /* ICPinyinGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPinyinGroup.h; sourceTree = "<group>"; };
+		38E4DF7C1B650E1D00053132 /* ICPinyinGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPinyinGroup.m; sourceTree = "<group>"; };
+		38E4DF7E1B65125400053132 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +74,8 @@
 		38E4C6271B61348C00F620D3 = {
 			isa = PBXGroup;
 			children = (
+				38E4DF7A1B650E1D00053132 /* ICPingyin */,
 				38E4DF731B65007E00053132 /* UIKit.framework */,
-				38E4DF6F1B64FBF300053132 /* ICPingyinConvert2 */,
 				38E4C6601B61357B00F620D3 /* name */,
 				38E4C6321B61348C00F620D3 /* ICPingyinConvert */,
 				38E4C64C1B61348C00F620D3 /* ICPingyinConvertTests */,
@@ -94,6 +95,7 @@
 		38E4C6321B61348C00F620D3 /* ICPingyinConvert */ = {
 			isa = PBXGroup;
 			children = (
+				38E4DF7E1B65125400053132 /* MyModel.h */,
 				38E4DF781B650B7D00053132 /* MyModel.m */,
 				38E4C6371B61348C00F620D3 /* AppDelegate.h */,
 				38E4C6381B61348C00F620D3 /* AppDelegate.m */,
@@ -133,13 +135,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38E4DF6F1B64FBF300053132 /* ICPingyinConvert2 */ = {
+		38E4DF7A1B650E1D00053132 /* ICPingyin */ = {
 			isa = PBXGroup;
 			children = (
-				38E4DF701B64FBF300053132 /* ICPinyinGroup.h */,
-				38E4DF711B64FBF300053132 /* ICPinyinGroup.m */,
+				38E4DF7B1B650E1D00053132 /* ICPinyinGroup.h */,
+				38E4DF7C1B650E1D00053132 /* ICPinyinGroup.m */,
 			);
-			path = ICPingyinConvert2;
+			path = ICPingyin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,11 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E4DF721B64FBF300053132 /* ICPinyinGroup.m in Sources */,
 				38E4DF791B650B7D00053132 /* MyModel.m in Sources */,
 				38E4C63C1B61348C00F620D3 /* ViewController.m in Sources */,
 				38E4C6391B61348C00F620D3 /* AppDelegate.m in Sources */,
 				38E4C6361B61348C00F620D3 /* main.m in Sources */,
+				38E4DF7D1B650E1D00053132 /* ICPinyinGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
